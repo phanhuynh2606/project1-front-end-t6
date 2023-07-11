@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+:root {
+   --color-main: #1b2026;
+   --color-highlight: #f7d9c4;
+   --color-text: #777777;
+   --bg-one: #efefef;
+   --font: 'DM Sans', sans-serif;
+}
+
+body {
+   font-family: var(--font);
+   box-sizing: border-box;
+   margin: 0;
+}
+
+/* Container */
+
+/* End container */
+a {
+   text-decoration: none;
+}
+a:hover{
+   text-decoration: none;
+}
+/* box head  */
+.box-head {
+   margin-bottom: 30px;
+   max-width: 800px;
+}
+
+.box-head .inner-title {
+   font-size: 3.8rem;
+   font-weight: 900;
+   color: var(--color-main);
+   line-height: 1.1;
+}
+
+.box-head.inner-center {
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+}
+
+.box-head.inner-small .inner-title {
+   font-size: 53px;
+}
+
+.box-head .inner-desc {
+   font-size: 18px;
+   color: var(--color-text);
+   margin-top: 10px;
+   font-weight: 700;
+}
+
+.box-head .title-white {
+   color: #efefef;
+}
+@media (max-width:991.98px) {
+   .box-head .inner-title {
+         font-size: 51px;
+      }
+}
+@media (max-width:767.98px) {
+   .box-head .inner-title {
+      text-align: center;
+   font-size: calc(1.88rem + (3.8 - 1.98) * ((100vw - 20rem) / (48 - 20)));
+      line-height: calc(1.1 * (1.98rem + (3.8 - 1.98) * ((100vw - 20rem) / (48 - 20))));
+   }
+
+}
+
+.m-auto{
+   margin: auto !important;
+}
+/* Button */
+a {
+   text-decoration: none;
+   list-style: none;
+}
+
+.button {
+   color: black;
+   background: #1b202600;
+   border-radius: 5px;
+   padding: 20px 40px;
+   margin: 0 10px;
+   border: 1px solid none;
+   font-weight: 600;
+   cursor: pointer;
+}
+.button:hover{
+   text-decoration: none;
+}
+.button.button-highlight {
+   background: var(--color-highlight);
+   color: #000;
+}
+
+.button-highlight:hover {
+   background: #fff;
+   text-decoration: none;
+}
+.button.button-black {
+   background: #000;
+   color: #fff;
+   padding: 20px 45px;
+}
+
+.button-black:hover {
+   background: #fff;
+   text-decoration: none;
+}
+.btn.button-black-pre {
+   background: #000;
+   color: #fff;
+   padding: 20px 35px 20px 35px;
+   font-size: 1.2rem;
+   font-weight: 600;
+   margin-right: -15px;
+}
+
+.btn.button-black-pre:hover {
+   background: #131313a9;
+   color: #000;
+   text-decoration: none;
+}
+/* end button */
